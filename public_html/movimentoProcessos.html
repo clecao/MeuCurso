@@ -13,18 +13,22 @@
     </head>
     <body>
         
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12" style="background: burlywood; height: 50px;">
+                <div class="col-lg-12" style="background: burlywood; height: 50px;">
                     <h2 class="titulos">Movimentação de Processos</h2>
                 </div>
             </div>
             <div class="row">
                <!-- <div class="col-md-4" style="background: orange; height: 600px;">Menu Lateral</div> -->
-                <div class="col-md-12" style="background: darkkhaki">
+                <div class="col-lg-12" style="background: #fff3cd">
+                    <br/>
                     <label style="margin-left: 80px;">Nosso Nº:  </label>
                     <input type="text" name="nosson"  id="nosson" size="22" maxlength="20" class="inputArredondado" required autofocus />
-                    <label style="margin-left: 10px;">Processo:  </label>
+                    <label style="margin-left: 10px;">
+                        <a href="https://www.google.com.br" target="_blank" style="color: #000" >Processo:</a>
+                    </label>
+         
                     <input type="text" name="processo" id="nosson" size="50" maxlength="45" class="inputArredondado" />
                     <label style="margin-left: 10px;">Vara:  </label>
                     <input type="text" name="vara" id="vara" size="8" maxlength="5" class="inputArredondado" />
@@ -36,17 +40,68 @@
                     <label style="margin-left: 10px;">Lote:  </label>
                     <input type="text" name="Lote" id="Lote" size="10" maxlength="10" class="inputArredondado" />
                     <label style="margin-left: 10px;">Situação: </label>
-                <select name="Situação" style="background: #ffeeba" >
+                <select name="Situação" style="background: #ffeeba" class="inputArredondado" >
                     <option value="EMB">EMB.</option>
                     <option value="IND">IND.</option>    
                     <option value="EXE">EXE.</option>
                     <option value="NADA"selected>NADA</option>
                 </select>
-                </div>
+                <label style="margin-left: 10px;">Vinculado: </label>    
+                <select name="Vinculado" style="background: #ffeeba" class="inputArredondado" >
+                    <option value="25">25</option>
+                    <option value="48">48</option>    
+                    <option value="112">112</option>
+                    <option value="113"selected>113</option>
+                </select> 
+                <br/>
+                <br/>
+                <label>Exceção:  </label>
+                <input type="date" name="Excecao" id="Excecao" class="inputArredondado" />
+                <label style="margin-left: 5px;">Penhora:  </label>
+                <input type="text" name="Penhora" id="Penhora" size="20" class="inputArredondado" />
+                <label style="margin-left: 5px;">Embargo:  </label>
+                <input type="date" name="EmbargoDT" id="EmbargoDT" class="inputArredondado" />
+                <input type="text" name="Embargo" id="Embargo" size="45" maxlength="45" class="inputArredondado" />
+                <br/>
+                <label>Impugnação: </label>
+                <input type="date" name="Impugnacao" id="Impugnacao" class="inputArredondado" />
+                <label style="margin-left: 2px">Nossa resposta:</label>
+                <input type="date" name="NossaResposta" id="NossaResposta" class="inputArredondado" /> 
+                <label style="margin-left: 2px;">Senteça:  </label>
+                <input type="date" name="SentencaDT" id="SentencaDT" class="inputArredondado" />
+                <input type="text" name="Sentenca" id="Sentenca" size="39" maxlength="45" class="inputArredondado" />
+                <br/ >
+                <label style="margin-left: 5px;">Apelação:  </label>
+                <input type="date" name="Apelacao" id="Apelacao" class="inputArredondado" />
+                <label style="margin-left: 5px;">Contra Razão:  </label>
+                <input type="date" name="ContraRazao" id="ContraRazao" class="inputArredondado" />
+                <label style="margin-left: 5px;">TJ nº:  </label>
+                <input type="text" name="TJ" id="TJ" size="45" maxlength="45" class="inputArredondado" />
+                <br/>
+                <label style="margin-left: 5px;">Transitado em Julgado:  </label>
+                <input type="text" name="Trasitado" id="Trasitado" size="45" maxlength="45" class="inputArredondado" />
+                <label style="margin-left: 5px;">Idenização:  </label>
+                <input type="date" name="IdenizacaoDT" id="IdenizacaoDT" class="inputArredondado" />
+                <input type="text" name="Idenizacao" id="Idenizacao" size="40" maxlength="45" class="inputArredondado" />
+                <label style="margin-left: 5px;">OBS:  </label>
+                <input type="text" name="Obs" id="Obs" size="147" maxlength="125" class="inputArredondado" />
+                <br/>
+                <label style="margin-left: 5px;">Movimento em:  </label>
+                <input type="date" name="MovimentoDT" id="MovimentoDT" class="inputArredondado" />
+                <label> <input type="checkbox" name="" value="ON" />
+                </label>
+                
+                <br/>
             </div>
+
+               
+       </div> 
             <div class="row">
-                <div class="col-md-12" style="background: aquamarine; height: 100px;">Rodapé</div>
+                <div class="col-lg-12" style="background: aquamarine; height: 100px">
+                 
+                </div>
+                
             </div>
-       </div>     
+        </div>
     </body>
 </html>
